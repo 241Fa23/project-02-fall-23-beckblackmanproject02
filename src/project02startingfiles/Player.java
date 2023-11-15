@@ -8,6 +8,13 @@ package project02startingfiles;
  *
  * @author s552603
  */
-public class Player {
+public abstract class Player {
+
+    private int Health = 10;
+    private int score = 10;
+
+    public abstract String getSpecialMove();
+
+    public abstract void useSpecialMove();
 
 }

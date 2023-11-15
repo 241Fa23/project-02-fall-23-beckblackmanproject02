@@ -8,6 +8,22 @@ package project02startingfiles;
  *
  * @author s552603
  */
-public class Thief {
+public class Thief extends Player {
+
+    public String specialMove = ("Sneak by");
+
+    public Thief() {
+
+    }
+
+    @Override
+    public String getSpecialMove() {
+        return specialMove;
+    }
+
+    @Override
+    public void useSpecialMove() {
+        System.out.print("The Thief sneaks by!");
+    }
 
 }
