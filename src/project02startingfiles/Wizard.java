@@ -8,6 +8,22 @@ package project02startingfiles;
  *
  * @author s552603
  */
-public class Wizard {
+public class Wizard extends Player {
+
+    public String specialMove = "Cast a Spell";
+
+    public Wizard() {
+
+    }
+
+    @Override
+    public String getSpecialMove() {
+        return specialMove;
+    }
+
+    @Override
+    public void useSpecialMove() {
+        System.out.print("The Wizard casts a spell!");
+    }
 
 }
