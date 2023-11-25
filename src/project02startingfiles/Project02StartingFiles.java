@@ -45,8 +45,8 @@ public class Project02StartingFiles {
             case "t":
                 System.out.println("Welcome, Thief!");
             default:
-                System.out.println()
-                
+                System.out.println();
+
         }
 
         System.out.println();
