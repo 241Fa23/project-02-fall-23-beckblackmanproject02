@@ -57,7 +57,6 @@ public class Project02StartingFiles {
         String[] scenes = {"Nothing here...", "Nice trees around here...", "Interesting cottage here...", "Potty break..."};
         String[] attacks = {"zombie", "bandit", "lobbyist"};
         String attacked = ("Oh no! You are being attacked by a bandit!\nHow would you like to handle this\n{s}Special Move || {r}Run!");
-        String choice2 = input.next();
 
         int randomEvent = rand.nextInt(scenes.length);
         System.out.println("**********************");
