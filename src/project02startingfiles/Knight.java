@@ -10,26 +10,20 @@ package project02startingfiles;
  */
 public class Knight extends Player {
 
-    public String Knight;
-
-    public String specialMove = "Slash with Sword";
-
-    public Knight() {
-
-    }
-
-    public String setKnight() {
-        return Knight;
-    }
-
     @Override
     public String getSpecialMove() {
-        return specialMove;
+        return "Slash with Sword";
     }
 
     @Override
     public void useSpecialMove() {
-        System.out.print("The Knight slashes his sword!");
+        System.out.println("The knight slashes with their sword!");
+    }
+
+    @Override
+    public String toString() {
+        return "Knight status:\nHealth: " + getHealth() + "\nScore:" + getScore()
+                + "\nThe knight's speical move is 'Slash with sword'";
     }
 
 }

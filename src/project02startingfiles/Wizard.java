@@ -10,15 +10,9 @@ package project02startingfiles;
  */
 public class Wizard extends Player {
 
-    public String specialMove = "Cast a Spell";
-
-    public Wizard() {
-
-    }
-
     @Override
     public String getSpecialMove() {
-        return specialMove;
+        return "Cast a Spell";
     }
 
     @Override
@@ -26,4 +20,9 @@ public class Wizard extends Player {
         System.out.print("The Wizard casts a spell!");
     }
 
+    @Override
+    public String toString() {
+        return "Wizard Status:\nHealth:" + getHealth() + "\nScore:" + getScore()
+                + "\nThe Wizard's special move is 'Cast a Spell'";
+    }
 }

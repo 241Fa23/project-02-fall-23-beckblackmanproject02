@@ -35,13 +35,18 @@ public class Project02StartingFiles {
         switch (choice) {
             case "w":
                 System.out.println("Welcome, Wizard!");
+                break;
             case "h":
                 System.out.println("Welcome, Healer!");
+                break;
             case "k":
                 System.out.println("Welcome, Knight!");
+                break;
             case "t":
                 System.out.println("Welcome, Thief!");
-
+            default:
+                System.out.println()
+                
         }
 
         System.out.println();

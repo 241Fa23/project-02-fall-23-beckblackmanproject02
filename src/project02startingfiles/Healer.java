@@ -10,20 +10,19 @@ package project02startingfiles;
  */
 public class Healer extends Player {
 
-    public String specialMove = "Use Sleeping Powder";
-
-    public Healer() {
-
-    }
-
     @Override
     public String getSpecialMove() {
-        return specialMove;
+        return "Use Sleeping Powder";
     }
 
     @Override
     public void useSpecialMove() {
-        System.out.print("The Healer uses Sleeping Powder!");
+        System.out.println("The healer uses sleeping powder!");
+    }
+
+    @Override
+    public String toString() {
+        return "Healer Status:\nHealth:" + getHealth() + "\nScore" + getScore() + "\nThe Healer's special move is 'Use Sleeping Powder'";
     }
 
 }
