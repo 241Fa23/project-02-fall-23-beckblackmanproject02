@@ -26,7 +26,7 @@ public abstract class Player {
         return health;
     }
 
-    public void setahealth(int health) {
+    public void sethealth(int health) {
         this.health = health;
     }
 

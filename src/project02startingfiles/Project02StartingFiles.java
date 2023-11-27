@@ -46,8 +46,12 @@ public class Project02StartingFiles {
                 player = new Thief();
                 break;
             default:
+
                 System.out.println("Invalid choice. Using default character: Thief");
                 player = new Thief();
+
+                System.out.println();
+
         }
 
         System.out.println();
@@ -58,15 +62,25 @@ public class Project02StartingFiles {
         String[] scenes = {"Nothing here...", "Nice trees around here...", "Interesting cottage here...", "Potty break..."};
         String[] attacks = {"zombie", "bandit", "lobbyist"};
         String attacked = ("Oh no! You are being attacked by a bandit!\nHow would you like to handle this\n{s}Special Move || {r}Run!");
-        String choice2 = input.next();
 
         int randomEvent = rand.nextInt(scenes.length);
         System.out.println("**********************");
         System.out.println(scenes[randomEvent]);
         System.out.println("**********************");
         int randomAttack = rand.nextInt(attacks.length);
-        System.out.println(attacked);
-        System.out.println(attacks[randomAttack]);
+        System.out.println("Oh no! You are being attacked by a " + attacks[randomAttack] + "!");
+        System.out.println("How would you like to handle this?");
+        System.out.println("{s} Special Move || {r}Run!");
+        String moveRun = input.next();
+        if (moveRun.equals("s")) {
+            System.out.println("Prepare for battle!");
+            System.out.println("Press any letter then ENTER to contine...");
+            String letter = input.next();
+            System.out.println("**********************");
+            System.out.println(choice);
+
+        }
+
     }
 
 }
