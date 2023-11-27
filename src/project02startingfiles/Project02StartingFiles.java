@@ -23,7 +23,6 @@ public class Project02StartingFiles {
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to JavaQuest!");
         System.out.println("Stay alive and increase your score!");
-        System.out.println();
         System.out.println("Choose a character...");
         System.out.print("{k}Knight || {h}Healer || {w}Wizard || {t}Thief\n>>");
         Knight knight1 = new Knight();
@@ -32,21 +31,23 @@ public class Project02StartingFiles {
         Wizard wizard1 = new Wizard();
 
         String choice = input.next();
+        Player player;
         switch (choice) {
             case "w":
-                System.out.println("Welcome, Wizard!");
+                player = new Wizard();
                 break;
             case "h":
-                System.out.println("Welcome, Healer!");
+                player = new Healer();
                 break;
             case "k":
-                System.out.println("Welcome, Knight!");
+                player = new Knight();
                 break;
             case "t":
-                System.out.println("Welcome, Thief!");
+                player = new Thief();
+                break;
             default:
-                System.out.println()
-                
+                System.out.println("Invalid choice. Using default character: Thief");
+                player = new Thief();
         }
 
         System.out.println();
