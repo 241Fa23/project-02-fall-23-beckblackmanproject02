@@ -63,8 +63,19 @@ public class Project02StartingFiles {
         System.out.println(scenes[randomEvent]);
         System.out.println("**********************");
         int randomAttack = rand.nextInt(attacks.length);
-        System.out.println(attacked);
-        System.out.println(attacks[randomAttack]);
+        System.out.println("Oh no! You are being attacked by a " + attacks[randomAttack] + "!");
+        System.out.println("How would you like to handle this?");
+        System.out.println("{s} Special Move || {r}Run!");
+        String moveRun = input.next();
+        if (moveRun.equals("s")) {
+            System.out.println("Prepare for battle!");
+            System.out.println("Press any letter then ENTER to contine...");
+            String letter = input.next();
+            System.out.println("**********************");
+            System.out.println(choice);
+
+        }
+
     }
 
 }
