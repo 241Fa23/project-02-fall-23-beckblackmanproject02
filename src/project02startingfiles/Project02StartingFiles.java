@@ -34,20 +34,21 @@ public class Project02StartingFiles {
         Player player;
         switch (choice) {
             case "w":
-                player = new Wizard();
+                System.out.println("Welcome, Wizard!");
                 break;
             case "h":
-                player = new Healer();
+                System.out.println("Welcome, Healer!");
+
                 break;
             case "k":
-                player = new Knight();
+                System.out.println("Welcome, Knight!");
+
                 break;
             case "t":
-                player = new Thief();
-                break;
-            default:
+                System.out.println("Welcome, Thief!");
 
-                System.out.println("Invalid choice. Using default character: Thief");
+            default:
+                System.out.println("Invalid choice, Using default character: Thief");
                 player = new Thief();
 
                 System.out.println();
