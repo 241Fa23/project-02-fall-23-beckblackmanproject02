@@ -20,10 +20,7 @@ public class Knight extends Player {
         System.out.println("The knight slashes with their sword!");
     }
 
-    @Override
-    public String toString() {
-        return "Knight status:\nHealth: " + getHealth() + "\nScore:" + getScore()
-                + "\nThe knight's speical move is 'Slash with sword'";
-    }
+    public void usingSpecialMove() {
 
+    }
 }

@@ -12,10 +12,12 @@ public abstract class Player {
 
     private int health;
     private int score;
+    private String specialMove;
 
     public Player() {
         this.health = 10;
         this.score = 0;
+        this.specialMove = "";
     }
 
     public abstract String getSpecialMove();
@@ -39,5 +41,9 @@ public abstract class Player {
     }
 
     @Override
-    public abstract String toString();
+    public String toString() {
+        return String.format("%s Status:\nHealth: %d%nScore: %d%nSpecial Move:%s",
+                getClass().getSimpleName(), health, score, specialMove);
+    }
+
 }
