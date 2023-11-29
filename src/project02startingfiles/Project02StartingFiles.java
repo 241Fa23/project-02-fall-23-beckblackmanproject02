@@ -102,10 +102,12 @@ public class Project02StartingFiles {
                     break;
             }
         } else {
+            System.out.println("***************************************");
             String[] scenes = {"Nothing here...", "Nice trees around here...",
                 "Intresting cottage there...", "Potty break..."};
             String scene = RandomGen.Scene(scenes);
             System.out.println(scene);
+            System.out.println("***************************************");
             player.setScore(player.getScore() + 1);
         }
     }
@@ -116,18 +118,19 @@ public class Project02StartingFiles {
 
         if (RandomGen.Event(0.6)) {
             System.out.println("***************************************");
-            player.useSpecialMove();
-            System.out.println("***************************************");
+            System.out.println(player.useSpecialMove());
             System.out.println("Player wins! Increases score by 2 points!");
             player.setScore(player.getScore() + 2);
+            System.out.println();
         } else {
             System.out.println("***************************************");
-            player.useSpecialMove();
-            System.out.println("***************************************");
+            System.out.println(player.useSpecialMove());
             System.out.println("Player loses! Deducting 1 health point.");
             player.sethealth(player.getHealth() - 1);
+            System.out.println();
         }
         System.out.println(player.toString());
+        System.out.println();
     }
 
     private static void end(Player player) {

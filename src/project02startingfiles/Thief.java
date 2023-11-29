@@ -17,6 +17,6 @@ public class Thief extends Player {
 
     @Override
     public String useSpecialMove() {
-        return "Sneak by";
+        return "The thief sneaks by!";
     }
 }

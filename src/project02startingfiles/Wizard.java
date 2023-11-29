@@ -17,7 +17,7 @@ public class Wizard extends Player {
 
     @Override
     public String useSpecialMove() {
-        return "Cast a Spell";
+        return "The wizard casts a Spell";
     }
 
 }
