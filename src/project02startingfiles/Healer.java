@@ -16,8 +16,8 @@ public class Healer extends Player {
     }
 
     @Override
-    public void useSpecialMove() {
-        System.out.println("The healer uses sleeping powder!");
+    public String useSpecialMove() {
+        return "Use Sleeping Powder";
 
     }
 

@@ -22,7 +22,7 @@ public abstract class Player {
 
     public abstract String getSpecialMove();
 
-    public abstract void useSpecialMove();
+    public abstract String useSpecialMove();
 
     public int getHealth() {
         return health;

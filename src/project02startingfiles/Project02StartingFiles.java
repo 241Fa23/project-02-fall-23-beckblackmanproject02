@@ -134,7 +134,12 @@ public class Project02StartingFiles {
         System.out.println("***************************************");
         System.out.println("***************************************");
         System.out.println("The game has come to an end. Your final stats:");
-        System.out.println(player.toString());
+        System.out.printf("%s Status:%n", player.getClass().getSimpleName());
+        System.out.println("Health: " + player.getHealth());
+        System.out.println("Score: " + player.getScore());
+        System.out.println("Special Move: " + player.useSpecialMove());
+
         System.out.println("Thanks for playing!");
+
     }
 }
