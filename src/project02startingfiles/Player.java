@@ -42,7 +42,7 @@ public abstract class Player {
 
     @Override
     public String toString() {
-        return String.format("%s Status:\nHealth: %d%nScore: %d%nSpecial Move:%s",
+        return String.format("%s Status:\nHealth: %d%nScore: %d%nThe " + getClass().getSimpleName() + "'s special move is '" + getSpecialMove() + "'" + "%s",
                 getClass().getSimpleName(), health, score, specialMove);
     }
 
