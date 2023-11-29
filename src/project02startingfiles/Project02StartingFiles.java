@@ -86,7 +86,6 @@ public class Project02StartingFiles {
 
             switch (action) {
                 case 's':
-                    player.useSpecialMove();
                     Battle(player);
                     break;
                 case 'r':
@@ -117,11 +116,13 @@ public class Project02StartingFiles {
 
         if (RandomGen.Event(0.6)) {
             System.out.println("***************************************");
+            player.useSpecialMove();
             System.out.println("***************************************");
             System.out.println("Player wins! Increases score by 2 points!");
             player.setScore(player.getScore() + 2);
         } else {
             System.out.println("***************************************");
+            player.useSpecialMove();
             System.out.println("***************************************");
             System.out.println("Player loses! Deducting 1 health point.");
             player.sethealth(player.getHealth() - 1);

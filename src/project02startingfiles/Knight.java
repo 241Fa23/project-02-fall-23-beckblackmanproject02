@@ -20,7 +20,4 @@ public class Knight extends Player {
         System.out.println("The knight slashes with their sword!");
     }
 
-    public void usingSpecialMove() {
-
-    }
 }
